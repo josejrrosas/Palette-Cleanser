@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS palatecleanser_db;
-CREATE DATABASE palatecleanser_db;
+DROP DATABASE IF EXISTS palettecleanser_db;
+CREATE DATABASE palettecleanser_db;
