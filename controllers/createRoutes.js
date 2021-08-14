@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 router.get('/', function (req, res) {
-    res.render('layouts/create');
+    res.render('create');
 });
 
 module.exports = router;
