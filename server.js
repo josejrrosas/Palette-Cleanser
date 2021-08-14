@@ -6,10 +6,10 @@ const routes = require('./controllers');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.engine('handlebars', exphbs({extname: "hbs",
-defaultLayout: false,
+app.engine('hbs', exphbs({extname: ".hbs",
+defaultLayout: 'main',
 layoutsDir: "views/layouts/"}));
-app.set('view engine', 'handlebars');
+app.set('view engine', 'hbs');
     
 app.use(express.static('public'))
 
