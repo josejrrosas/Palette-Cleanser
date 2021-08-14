@@ -6,16 +6,21 @@
 
 body{
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
+    grid-template-rows: 10% 90%;
 }
 
-section{
+
+/* -----------------------create.hbs------------------------ */
+.createhbs{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 90vh;
+}
+
+/* LEFT SIDE*/
+.exampleSide{
     display: flex;
     flex-direction: column;
-}
-
-.exampleSide{
     display: grid;
     grid-template-rows: 10% 10% 65% 15%;
     margin: 10px;
@@ -67,7 +72,10 @@ section{
     display: block;
 }
 
+/* RIGHT SIDE */
 .chooserSide{
+    display: flex;
+    flex-direction: column;
     grid-template-rows: 25% 20% 20%;
     grid-template-columns: 100%;
     align-items: center;
@@ -124,3 +132,6 @@ section{
     align-items: center;
     justify-content: center;
 }
+
+
+/* -----------------------homepage.hbs------------------------ */
