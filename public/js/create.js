@@ -8,55 +8,35 @@ const newFormHandler = async (event) => {
   const body = document.querySelector('#body').value;
   const footer = document.querySelector('#footer').value;
 
- /* if (font1 && font2 && font3) {
-    const response = await fetch(`/api/favorite`, {
-      method: 'POST',
-      body: JSON.stringify({ font1, font2, font3 }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
 
-    if (response.ok) {
-      document.location.replace('/create');
-    } else {
-      alert('Failed to create favorite');
-    }
-  } */
+  if (font1 == 1) {
+    document.getElementsByClassName('quote')[0].style.fontFamily = 'Times New Roman';
+  } else if (font1 == 2) {
+    document.getElementsByClassName('quote')[0].style.fontFamily = 'Gill Sans';
+  } else {
+    document.getElementsByClassName('quote')[0].style.fontFamily = 'Verdana';
+  }
 
-  if(font1 == 1){
-    document.getElementsByClassName('quote')[0].style.fontFamily='Times New Roman';
-    }else if(font1 == 2){
-     document.getElementsByClassName('quote')[0].style.fontFamily='Gill Sans';
-    }else{
-      document.getElementsByClassName('quote')[0].style.fontFamily='Verdana';
-    }
+  if (font2 == 1) {
+    document.getElementsByClassName('exTitle')[0].style.fontFamily = 'Times New Roman';
+  } else if (font2 == 2) {
+    document.getElementsByClassName('exTitle')[0].style.fontFamily = 'Gill Sans';
+  } else {
+    document.getElementsByClassName('exTitle')[0].style.fontFamily = 'Verdana';
+  }
 
-    if(font2 == 1){
-      document.getElementsByClassName('exTitle')[0].style.fontFamily='Times New Roman';
-      }else if(font2 == 2){
-       document.getElementsByClassName('exTitle')[0].style.fontFamily='Gill Sans';
-      }else{
-        document.getElementsByClassName('exTitle')[0].style.fontFamily='Verdana';
-      }
+  if (font3 == 1) {
+    document.getElementsByClassName('exParagraph')[0].style.fontFamily = 'Times New Roman';
+  } else if (font3 == 2) {
+    document.getElementsByClassName('exParagraph')[0].style.fontFamily = 'Gill Sans';
+  } else {
+    document.getElementsByClassName('exParagraph')[0].style.fontFamily = 'Verdana';
+  }
 
-    if(font3 == 1){
-        document.getElementsByClassName('exParagraph')[0].style.fontFamily='Times New Roman';
-        }else if(font3 == 2){
-         document.getElementsByClassName('exParagraph')[0].style.fontFamily='Gill Sans';
-        }else{
-          document.getElementsByClassName('exParagraph')[0].style.fontFamily='Verdana';
-        }
-
-  /*document.getElementsByClassName('quote').style.fontFamily=font1;
-  document.getElementsByClassName('exTitle').style.fontFamily=font3;
-  document.getElementsByClassName('exParagraph').style.fontFamily=font3; */
   
-
-  document.getElementsByClassName('mainHeader')[0].style.backgroundColor=head;
-  document.getElementsByClassName('block')[0].style.backgroundColor=body;
-  document.getElementsByClassName('exFooter')[0].style.backgroundColor=footer;
-  
+  document.getElementsByClassName('mainHeader')[0].style.backgroundColor = head;
+  document.getElementsByClassName('block')[0].style.backgroundColor = body;
+  document.getElementsByClassName('exFooter')[0].style.backgroundColor = footer;
 
 };
 
