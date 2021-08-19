@@ -37,7 +37,7 @@
             </button>
         </div>
 
-         <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
 
         <div
           class="collapse navbar-collapse d-flex justify-content-end"
@@ -54,13 +54,16 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
             </li>
+             <li class="nav-item">
+              {{#if logged_in}}
+                <a class="nav-link no-button" href="/create">Create</a>
+              {{/if}}
+            </li>
             <li class="nav-item">
               {{#if logged_in}}
-                <a href="/create" class="nav-link">Create</a>
-                |
-                <button class="no-button" id="logout">logout</button>
+                <a class="nav-link no-button" id="logout">Logout</a>
               {{else}}
-                <a href="/login">login</a>
+              <a class="nav-link" href="/login">Login</a>
               {{/if}}
             </li>
           </ul>
