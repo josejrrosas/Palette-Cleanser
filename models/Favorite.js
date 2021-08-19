@@ -21,14 +21,19 @@ Favorite.init(
     },
     color2: {
       type: DataTypes.STRING,
+      allowNull: false,
     },
     color3: {
       type: DataTypes.STRING,
+      allowNull: false,
     },
     font1: {
       type: DataTypes.STRING,
     },
     font2: {
+      type: DataTypes.STRING,
+    },
+    font3: {
       type: DataTypes.STRING,
     },
     user_id: {
