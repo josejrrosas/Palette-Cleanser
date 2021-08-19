@@ -26,6 +26,7 @@
     width: 300px;
 }
 
+
 .profile {
     width: 100px;
     height: 100px;
@@ -123,6 +124,12 @@
     .cl-main {
         flex-direction: row;
     }
+    .one {
+        margin-right: 10px;
+    }
+    .three {
+        margin-right: 10px;
+    }
  }
 
 
@@ -139,6 +146,9 @@
     }
     .cl-main {
         flex-direction: row;
+    }
+    .two {
+        margin-right: 10px;
     }
  }
 
