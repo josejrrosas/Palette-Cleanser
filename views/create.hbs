@@ -21,33 +21,45 @@
 
   <section class="chooserSide">
     <div class="fontOptions">
-      <select class="form-select" aria-label="Default select example">
-        <option selected>Font 1</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
+      <select id="select1" class="form-select" aria-label="Default select example">
+        <option selected>Header</option>
+        <option value="1">Times New Roman</option>
+        <option value="2">Gill Sans</option>
+        <option value="3">Verdana</option>
       </select>
-      <select class="form-select" aria-label="Default select example">
-        <option selected>Font 2</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
+      <select id="select2" class="form-select" aria-label="Default select example">
+        <option selected>Body</option>
+        <option value="1">Times New Roman</option>
+        <option value="2">Gill Sans</option>
+        <option value="3">Verdana</option>
       </select>
-      <select class="form-select" aria-label="Default select example">
-        <option selected>Font 3</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
+      <select id="select3" class="form-select" aria-label="Default select example">
+        <option selected>Footer</option>
+        <option value="1">Times New Roman</option>
+        <option value="2">Gill Sans</option>
+        <option value="3">Verdana</option>
       </select>
     </div>
     <div class="colorOptions">
-      <div class="colors" id="color1"></div>
-      <div class="colors" id="color2"></div>
-      <div class="colors" id="color3"></div>
+      <div>
+        <input type="color" id="head" name="head" value="#EE9B9B">
+        <label for="head"></label>
+      </div>
+      <div>
+        <input type="color" id="body" name="body" value="#59808F">
+        <label for="body"></label>
+      </div>
+      <div>
+        <input type="color" id="footer" name="footer" value="#413E3E">
+        <label for="footer"></label>
+      </div>
     </div>
     <div class="buttons">
       <button class="btn" id="saveBtn">Save</button>
       <button class="btn" id="favBtn">Favorite</button>
     </div>
+    </div>
   </section>
 </div>
+
+<script src="./js/create.js"></script>
