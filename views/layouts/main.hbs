@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/homepage.css">
     <title>Palette Cleanser</title>
   </head>
 
@@ -30,10 +31,14 @@
 
         </button>
 
+
+        {{!-- <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+
         <div
           class="collapse navbar-collapse d-flex justify-content-end"
           id="navbarNav"
         >
+
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">Home</a>
@@ -54,15 +59,49 @@
               {{/if}}
             </li>
           </ul>
-        </div>
+        </div> --}}
       </div>
     </nav>
 
     <div class="container">
       {{{body}}}
     </div>
+
+
+    <footer class="fmfooter">
+      <div class="cl-main">
+        <div class="pc-icon">
+          <div>
+            <span>Pallete Cleaner</span>
+          </div>
+          <div>
+            <span>X</span>
+            <span>X</span>
+            <span>X</span>
+            <span>X</span>
+          </div> 
+        </div>
+        <div class="cl">
+          <span>Home</span>
+          <span>About</span>
+          <span>Contact us</span>
+        </div>
+        <div class="cl"> 
+          <span>Downloads</span>
+          <span>Copyrights</span>
+          <span>FAQ</span>
+        </div>
+        <div class="cl">
+          <span>Sign up for newsletter</span>
+          <input type="text" placeholder="enter your email address" name="" id="">
+          <button class="su-bt">Sign Up</button>
+        </div>
+      </div>
+    </footer>
+
     {{#if logged_in}}
       <script src="/js/logout.js"></script>
     {{/if}}
+
   </body>
 </html>
