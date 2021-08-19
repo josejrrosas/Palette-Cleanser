@@ -3,11 +3,30 @@
     padding: 0;
 }
 
+:root {
+   
+    --main-font:  'Open Sans', sans-serif;
+    --sec-font:  'Hind Siliguri', sans-serif;
+    --trd-font:  'Hind Guntur', sans-serif;
+}
 .main-content {
     margin-top: 40px;
     flex-wrap: wrap;
 }
 
+.icon {
+    height: 20px;
+    widtH: 20px;
+}
+
+.h1 {
+    font-family: var(--main-font);
+    
+}
+.h6 {
+    font-family: var(--sec-font);
+    font-weight: 800;
+}
 .displayTemplate {
     margin-top: 20px;
     background-size: 100%;
@@ -22,9 +41,13 @@
 }
 
 .team-card {
-    border-style: solid;
+    border-radius: 10px;
+    box-shadow: rgba(128, 128, 128, 0.198) 0px 0px 5px 0px;
+    border-style: none;
     width: 300px;
+    height:200px;
 }
+
 
 .profile {
     width: 100px;
@@ -39,13 +62,13 @@
 .ad1 {
     line-height: 40px;
     font-size: 40px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--main-font);
 }
 
 .ad2 {
     font-size: 20px;
     font-weight: lighter;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--sec-font);
 }
 
 .dl-bt {
@@ -66,6 +89,16 @@
 .gh-bt {
     height: 30px;
     width: 70px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.gb {
+    background-color: rgb(78, 80, 228);
+}
+
+.ln {
+    box-shadow: rgb(204, 204, 204) 0px 0px 5px 1px;
 }
 
 .fmfooter {
@@ -123,6 +156,12 @@
     .cl-main {
         flex-direction: row;
     }
+    .one {
+        margin-right: 10px;
+    }
+    .three {
+        margin-right: 10px;
+    }
  }
 
 
@@ -139,6 +178,9 @@
     }
     .cl-main {
         flex-direction: row;
+    }
+    .two {
+        margin-right: 10px;
     }
  }
 

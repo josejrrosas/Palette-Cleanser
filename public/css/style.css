@@ -2,14 +2,30 @@
     --first-color: rgb(238, 155, 155);
     --second-color: rgb(89, 128, 143);
     --third-color: rgb(65, 62, 62);
-  }
+
+    --main-font: font-family: 'Open Sans', sans-serif;
+    --sec-font: font-family: 'Hind Siliguri', sans-serif;
+    --trd-font: font-family: 'Hind Guntur', sans-serif;
+}
+
+
+  /* 
+  font-family: 'Open Sans', sans-serif;       // header
+  font-family: 'Hind Siliguri', sans-serif;   // title
+  font-family: 'Hind Guntur', sans-serif;     // body
+  
+   */ 
 
 body{
     display: grid;
     grid-template-rows: 10% 90%;
 }
 
+a:link, a:visited,  a:hover, a:active
+{
 
+    text-decoration: none;
+}
 /* -----------------------create.hbs------------------------ */
 .createhbs{
     display: grid;
@@ -20,12 +36,11 @@ body{
 /* LEFT SIDE*/
 .exampleSide{
     display: flex;
-    flex-direction: column;
-    display: grid;
-    grid-template-rows: 10% 10% 65% 15%;
+    flex-direction: row;
+    
     margin: 10px;
     border: 1px black solid;
-    margin:0 10%;
+    
 }
 
 .mainHeader{
@@ -39,8 +54,8 @@ body{
 }
 
 .quote{
-    text-align: center;
-    margin: 10px;
+
+    font-size: 30px;
 }
 
 .hero{
@@ -49,24 +64,45 @@ body{
 
 .block{
     background-color:  var(--second-color);
-    height: 50%;
-    margin: 0% 20%;
-}
 
+
+}
+#savebtn {
+    background-color: rgb(34, 78, 224);
+    margin-right: 10px;
+    color: white;
+    font-family: var(--trd-font);
+    padding-top: 12px;
+}
+#favBtn {
+    background-color: rgb(226, 28, 28);
+    color: white;
+    font-family: var(--trd-font);
+    padding-top: 12px;
+    
+}
 .titleAndP{
     display: flex;
     flex-direction: column;
 }
 
 .exTitle{
-    text-align: center;
-    margin:0px;
+    font-size: 20px;
 }
 
 .exParagraph{
-    margin:10px 5px;
+    font-size: 12px;
+
+    text-align:left;
 }
 
+.exbutton {
+    border-style: none;
+    border-radius: 8px;
+    height: 30px;
+    width: 80px;
+    text-decoration: none;
+}
 .exFooter{
     background-color:  var(--third-color);
     display: block;
@@ -121,7 +157,7 @@ body{
 }
 
 .btn{
-    margin:0 10px;
+
     background-color:rgb(185, 182, 182);
 }
 
@@ -135,4 +171,177 @@ body{
 
 
 /* -----------------------homepage.hbs------------------------ */
+.devname {
+    border-radius: 10px;
+    box-shadow: rgb(195, 195, 195) 0px 0px 5px 0px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+    font-family: var(--main-font);
+}
 
+.phone-container {
+    background-color:rgb(235, 235, 235);
+    box-shadow: rgba(128, 128, 128, 0.329) 0px 0px 8px 2px;
+    border-radius: 30px;
+    width: 300px;
+    height: 540px;
+}
+.phone-mock {
+    flex-direction: column;
+}
+.mainHeader {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.head {
+    width: 300px;
+    height: 60px;
+    background-color: rgb(245, 70, 70);
+    border-radius: 30px 30px 0px 0px;
+    
+}
+.exbody{
+    background-color: rgb(255, 255, 255);
+    height: 400px;
+    width: 300px;
+}
+
+.mainb {
+    justify-content: center;
+    
+}
+
+.mainb p {
+    font-size: 8px;
+    width: 150px;
+    
+}
+
+.foot {
+    border-radius: 0px 0px 30px 30px;
+    
+    width:300px;
+    height:80px;
+    background-color: rgb(44, 28, 28);
+}
+
+.exbut {
+    border-style: none;
+    border-radius: 8px;
+    width: 80px;
+    height:30px;
+}
+
+/* login page*/
+
+.logincard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(251, 251, 251);
+    height: 600px;
+    width: 400px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: grey 0px 0px 5px 0px;
+    border-style: solid rgb(0, 0, 0)
+    ;
+}
+.logincard h2 {
+    margin-top: 40px;
+    font-size: 60px;
+    font-family: var(--main-font);
+}
+
+.lgbtn {
+    border-radius: 8px;
+    font-family: var(--sec-font);
+    border-style: none;
+    box-shadow: grey 0px 0px 4px 0px;
+    height: 30px;
+    width: 180px;
+    background-color: rgb(112, 91, 228);
+    margin-top: 0;
+}
+
+
+/* login page */
+
+@media (max-width:1190px) and (min-width:500px) {
+    
+    .phone-container {
+        width: 500px;
+        height: 540px;
+        margin:auto;
+    }
+    .head {
+        width: 500px; 
+    }
+    
+    .exbody {
+        width: 500px;
+    }
+    .foot {
+        width: 500px; 
+    }
+    
+    .exbody {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .phone-mock {
+        flex-direction: row;
+    }
+    .yer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+​}
+
+@media(min-width:1100px) {
+    
+    .phone-container {
+        width: 1000px;
+        height: 540px;
+        margin:auto;
+    }
+    .head {
+        width: 1000px; 
+    }
+    
+    .exbody {
+        width: 1000px;
+    }
+    .foot {
+        width: 1000px; 
+    }
+    .mainHeader{
+        justify-content: space-between;
+    }
+    .mainHeader * {
+        margin: 0px 20px;
+    }
+    .exbody {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .phone-mock {
+        flex-direction: row;
+    }
+    .yer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+​}
