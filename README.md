@@ -14,4 +14,4 @@ viewable on mobile devices.
 
 **What's the current webpage look like?** <BR />
 
-![Palette Cleanser Web App](./Palette-Cleanser/Palette-Cleanser.png)
+![Palette Cleanser Web App](public/img/SCREENSHOT-FOR-PALLETE.png)
